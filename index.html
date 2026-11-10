@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Pablo Quiros | Desarrollador Web</title>
+  <meta name="description" content="Portfolio de Juan Pablo Quiros Reyes - Estudiante de Técnico en Desarrollo Web" />
+  <meta name="theme-color" content="#0b0f19" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Juan Pablo Quiros | Desarrollador Web" />
+  <meta property="og:description" content="Portfolio de Juan Pablo Quiros Reyes - Estudiante de Técnico en Desarrollo Web" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-curtain enter" id="pageCurtain" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo">Juan<span>.</span>Pablo</a>
+      <div class="nav-links">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#podcast" class="nav-link">Podcast</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#educacion" class="nav-link">Educación</a>
+        <a href="#curriculum" class="nav-link">Currículum</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#cotizar" class="btn btn-primary btn-sm nav-cta">Cotizar</a>
+        <button class="theme-btn" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg class="icon-moon" style="display:none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#inicio" class="mobile-link">Inicio</a>
+    <a href="#sobre-mi" class="mobile-link">Sobre mí</a>
+    <a href="#podcast" class="mobile-link">Podcast</a>
+    <a href="#proyectos" class="mobile-link">Proyectos</a>
+    <a href="#experiencia" class="mobile-link">Experiencia</a>
+    <a href="#habilidades" class="mobile-link">Habilidades</a>
+    <a href="#educacion" class="mobile-link">Educación</a>
+    <a href="#curriculum" class="mobile-link">Currículum</a>
+    <a href="#contacto" class="mobile-link">Contacto</a>
+    <a href="#cotizar" class="mobile-link">Cotizar un proyecto</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Disponible para oportunidades
+        </div>
+        <h1>Hola, soy <span class="accent">Juan Pablo</span><br />Desarrollador Web</h1>
+        <p>
+          Estudiante de Técnico en Desarrollo Web con experiencia en páginas web,
+          formularios interactivos y diseño responsive. Apasionado por crear
+          experiencias digitales limpias y funcionales.
+        </p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary">
+            Contactarme
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#experiencia" class="btn btn-outline">Ver experiencia</a>
+          <button type="button" class="btn btn-cv" data-open-cv>
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Ver currículum
+          </button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="yo.jpeg" alt="Foto de Juan Pablo Quiros Reyes" class="avatar" width="640" height="640" />
+        <h3>Juan Pablo Quiros Reyes</h3>
+        <p class="role">Técnico en Desarrollo Web</p>
+        <div class="info-row">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          San José, Costa Rica
+        </div>
+        <div class="info-row">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          juanpabloquiros.ctpa@gmail.com
+        </div>
+        <div class="info-row">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          6194-3952 / 6460-7351
+        </div>
+        <div class="skills-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Vercel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="section" id="sobre-mi">
+    <div class="container">
+      <h2 class="section-title reveal">Sobre <span class="accent">mí</span></h2>
+      <p class="section-subtitle reveal reveal-delay-1">Un poco sobre mi trayectoria y lo que me motiva.</p>
+      <div class="about-grid">
+        <div class="about-text reveal reveal-delay-2">
+          <p>
+            Soy estudiante de undécimo año de Informática con énfasis en Desarrollo Web
+            en el Colegio Técnico Profesional de Aserrí. Durante mi pasantía en deleFOCO
+            trabajé en la creación y publicación de páginas web profesionales usando
+            HTML, CSS, JavaScript, GitHub y Vercel.
+          </p>
+          <p>
+            Me especializo en diseño responsive, formularios con validación e integración
+            con WhatsApp, menús interactivos, carruseles, modales, cambio de tema y
+            multiidioma. Siempre busco mejorar la experiencia de usuario basándome en
+            la retroalimentación del cliente.
+          </p>
+          <p>
+            Soy una persona disciplinada, comprometida y con gran disposición para
+            aprender, trabajar en equipo y adaptarme a nuevos retos.
+          </p>
+        </div>
+        <div class="stats reveal reveal-delay-3">
+          <div class="stat-card">
+            <div class="number" data-count="3">0</div>
+            <div class="label">Páginas creadas</div>
+          </div>
+          <div class="stat-card">
+            <div class="number" data-count="4">0</div>
+            <div class="label">Formularios implementados</div>
+          </div>
+          <div class="stat-card">
+            <div class="number" data-count="2">0</div>
+            <div class="label">Idiomas (ES / EN)</div>
+          </div>
+          <div class="stat-card">
+            <div class="number" data-count="10">0</div>
+            <div class="label">Habilidades blandas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Podcast -->
+  <section class="section" id="podcast">
+    <div class="container">
+      <h2 class="section-title reveal">Mi <span class="accent">podcast</span></h2>
+      <p class="section-subtitle reveal reveal-delay-1">Escucha mi presentación en audio.</p>
+      <div class="podcast-card reveal reveal-delay-2" id="podcastCard">
+        <button type="button" class="play-btn" id="playBtn" aria-label="Reproducir podcast">
+          <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72a1 1 0 001.52.85l11-6.86a1 1 0 000-1.7l-11-6.86A1 1 0 008 5.14z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></svg>
+        </button>
+        <div class="podcast-body">
+          <h3>Conoce a Juan Pablo</h3>
+          <p>Quién soy, qué estudio y qué hice en mi pasantía en deleFOCO.</p>
+          <div class="eq" id="eq" aria-hidden="true"></div>
+          <input type="range" class="seek" id="seek" min="0" max="100" step="0.1" value="0" aria-label="Posición del audio" />
+          <div class="time-row"><span id="curTime">0:00</span><span id="durTime">--:--</span></div>
+          <p class="podcast-note" id="podcastNote" hidden></p>
+        </div>
+        <audio id="podcastAudio" preload="metadata" src="assets/podcast_juanpablo.mp3"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <h2 class="section-title reveal">Páginas <span class="accent">creadas</span></h2>
+      <p class="section-subtitle reveal reveal-delay-1">Tres páginas reales que he creado. Puedes abrirlas o verlas aquí mismo.</p>
+      <div class="projects-grid">
+
+        <article class="project-card reveal reveal-delay-1">
+          <div class="browser" data-url="https://servicio-casting.vercel.app/">
+            <div class="browser-bar"><i></i><i></i><i></i><span>servicio-casting.vercel.app</span></div>
+            <div class="browser-view">
+              <div class="browser-cover">
+                <span class="cover-kicker">deleFOCO · Casting</span>
+                <strong>Del brief al talento. Nosotros hacemos el casting.</strong>
+                <button type="button" class="btn btn-outline btn-sm live-btn">Ver vista previa en vivo</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Casting para producciones</h3>
+            <p>Página para que marcas y productoras pidan talento o un casting completo. Incluye catálogo con filtros, formulario de solicitud y formulario por pasos para publicar castings.</p>
+            <div class="skills-tags">
+              <span class="tag">Filtros por categoría</span><span class="tag">Formulario por pasos</span><span class="tag">WhatsApp</span><span class="tag">ES / EN</span><span class="tag">Tema claro/oscuro</span>
+            </div>
+            <a class="btn btn-primary btn-sm" href="https://servicio-casting.vercel.app/" data-transition>Abrir página
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-2">
+          <div class="browser" data-url="https://serparte-casting.vercel.app/">
+            <div class="browser-bar"><i></i><i></i><i></i><span>serparte-casting.vercel.app</span></div>
+            <div class="browser-view">
+              <div class="browser-cover alt">
+                <span class="cover-kicker">deleFOCO · Soy Talento</span>
+                <strong>Tu talento, frente a la cámara correcta.</strong>
+                <button type="button" class="btn btn-outline btn-sm live-btn">Ver vista previa en vivo</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Crea tu perfil de talento</h3>
+            <p>Página para que actores, modelos, bailarines y músicos se sumen al directorio. Tiene carrusel de disciplinas, niveles de participación, preguntas frecuentes y formulario de perfil.</p>
+            <div class="skills-tags">
+              <span class="tag">Carrusel</span><span class="tag">Formulario con validación</span><span class="tag">Ventana modal</span><span class="tag">ES / EN</span><span class="tag">Responsive</span>
+            </div>
+            <a class="btn btn-primary btn-sm" href="https://serparte-casting.vercel.app/" data-transition>Abrir página
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-3">
+          <div class="browser" data-url="https://osvaldo-one.vercel.app/">
+            <div class="browser-bar"><i></i><i></i><i></i><span>osvaldo-one.vercel.app</span></div>
+            <div class="browser-view">
+              <div class="browser-cover alt2">
+                <span class="cover-kicker">Construcción · Remodelación</span>
+                <strong>Experto en transformación de espacios.</strong>
+                <button type="button" class="btn btn-outline btn-sm live-btn">Ver vista previa en vivo</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Construcciones y remodelaciones</h3>
+            <p>Página de presentación para una empresa de construcción y remodelación en San José. Muestra el portafolio de trabajos por categorías, con fotos y videos de obra, y datos de contacto con enlace a WhatsApp.</p>
+            <div class="skills-tags">
+              <span class="tag">Galería por categorías</span><span class="tag">Fotos y videos de obra</span><span class="tag">WhatsApp</span><span class="tag">Portafolio de trabajos</span>
+            </div>
+            <a class="btn btn-primary btn-sm" href="https://osvaldo-one.vercel.app/" data-transition>Abrir página
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="section" id="experiencia">
+    <div class="container">
+      <h2 class="section-title reveal">Experiencia de <span class="accent">pasantía</span></h2>
+      <p class="section-subtitle reveal reveal-delay-1">Proyectos reales y responsabilidades asumidas.</p>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="date">2026</div>
+          <h3>Pasantía Laboral — Desarrollo Web</h3>
+          <p class="company">deleFOCO · San José, Costa Rica</p>
+          <ul>
+            <li>Contribuí al desarrollo y publicación de tres páginas de Producción y Casting con HTML, CSS y JavaScript, navegación interconectada e identidad visual uniforme.</li>
+            <li>Implementé cuatro formularios con validación de campos obligatorios e integración con WhatsApp mediante mensajes prellenados.</li>
+            <li>Desarrollé menú hamburguesa, diseño responsive, carrusel, filtros por categoría, formulario por pasos, ventanas modales y cambio de tema claro/oscuro.</li>
+            <li>Implementé cambio de idioma español/inglés actualizando el contenido dinámicamente sin recargar el sitio.</li>
+            <li>Publiqué las páginas en Vercel mediante GitHub y configuré la navegación entre ellas.</li>
+            <li>Ajusté estructura, jerarquía visual y navegación según retroalimentación del cliente (UX/UI).</li>
+            <li>Participé en reuniones de requerimientos, presentación de diseños y validación de cambios.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section class="section" id="habilidades">
+    <div class="container">
+      <h2 class="section-title reveal">Habilidades <span class="accent">técnicas</span></h2>
+      <p class="section-subtitle reveal reveal-delay-1">Tecnologías y herramientas que manejo.</p>
+      <div class="skills-grid">
+        <div class="skill-card reveal" style="--level:70%">
+          <div class="skill-icon">🌐</div>
+          <h4>HTML5</h4>
+          <div class="skill-level">Medio</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1" style="--level:55%">
+          <div class="skill-icon">🎨</div>
+          <h4>CSS3</h4>
+          <div class="skill-level">Básico a medio</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2" style="--level:40%">
+          <div class="skill-icon">⚡</div>
+          <h4>JavaScript</h4>
+          <div class="skill-level">Básico</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-3" style="--level:40%">
+          <div class="skill-icon">📱</div>
+          <h4>Bootstrap</h4>
+          <div class="skill-level">Básico</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+        <div class="skill-card reveal" style="--level:65%">
+          <div class="skill-icon">📐</div>
+          <h4>UML</h4>
+          <div class="skill-level">Medio</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1" style="--level:40%">
+          <div class="skill-icon">📦</div>
+          <h4>Git / GitHub</h4>
+          <div class="skill-level">Básico</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2" style="--level:40%">
+          <div class="skill-icon">🚀</div>
+          <h4>Vercel</h4>
+          <div class="skill-level">Básico</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-3" style="--level:65%">
+          <div class="skill-icon">📊</div>
+          <h4>Excel</h4>
+          <div class="skill-level">Medio</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+        <div class="skill-card reveal" style="--level:65%">
+          <div class="skill-icon">💼</div>
+          <h4>Office 365</h4>
+          <div class="skill-level">Medio</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1" style="--level:40%">
+          <div class="skill-icon">🐧</div>
+          <h4>Linux</h4>
+          <div class="skill-level">Básico</div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+        </div>
+      </div>
+
+      <h3 class="section-title reveal" style="font-size:1.35rem; margin-top:3rem;">Habilidades blandas</h3>
+      <div class="soft-skills reveal reveal-delay-1">
+        <span class="soft-tag">Trabajo en equipo</span>
+        <span class="soft-tag">Adaptabilidad al cambio</span>
+        <span class="soft-tag">Comunicación asertiva</span>
+        <span class="soft-tag">Resolución de problemas</span>
+        <span class="soft-tag">Aprendizaje permanente</span>
+        <span class="soft-tag">Autonomía y responsabilidad</span>
+        <span class="soft-tag">Manejo de la presión</span>
+        <span class="soft-tag">Profesionalismo</span>
+        <span class="soft-tag">Enfoque a resultados</span>
+        <span class="soft-tag">Disposición y compromiso</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educación -->
+  <section class="section" id="educacion">
+    <div class="container">
+      <h2 class="section-title reveal">Educación</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Formación académica y cursos.</p>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <h3>Bachillerato en Educación Media — Cursando undécimo año</h3>
+            <p class="school">Colegio Técnico Profesional de Aserrí</p>
+            <p class="year">2025 – 2026</p>
+          </div>
+        </div>
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-icon">💻</div>
+          <div>
+            <h3>Técnico en Desarrollo Web — Cursando undécimo año</h3>
+            <p class="school">Colegio Técnico Profesional de Aserrí</p>
+            <p class="year">2025 – 2026</p>
+          </div>
+        </div>
+        <div class="edu-card reveal reveal-delay-2">
+          <div class="edu-icon">📚</div>
+          <div>
+            <h3>Conclusión de Estudios del Tercer Ciclo de la Educación General Básica</h3>
+            <p class="school">Liceo Monseñor Rubén Odio Herrera</p>
+            <p class="year">2024</p>
+          </div>
+        </div>
+        <div class="edu-card reveal reveal-delay-3">
+          <div class="edu-icon">📈</div>
+          <div>
+            <h3>Excel Básico</h3>
+            <p class="school">La Libertad</p>
+            <p class="year">2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Currículum -->
+  <section class="section" id="curriculum">
+    <div class="container">
+      <h2 class="section-title reveal">Mi <span class="accent">currículum</span></h2>
+      <p class="section-subtitle reveal reveal-delay-1">Mira mi hoja de vida completa sin salir de la página.</p>
+      <div class="cv-grid">
+        <button type="button" class="cv-paper reveal reveal-delay-2" data-open-cv aria-label="Ver currículum">
+          <span class="cv-name">JUAN PABLO QUIROS REYES</span>
+          <span class="cv-role">Estudiante de Técnico en Desarrollo Web</span>
+          <span class="cv-label">Perfil profesional</span>
+          <i class="line" style="width:100%"></i><i class="line" style="width:94%"></i><i class="line" style="width:78%"></i>
+          <span class="cv-label">Experiencia de pasantía</span>
+          <i class="line" style="width:88%"></i><i class="line" style="width:96%"></i><i class="line" style="width:64%"></i>
+          <span class="cv-label">Educación</span>
+          <i class="line" style="width:82%"></i><i class="line" style="width:70%"></i>
+          <span class="cv-label">Habilidades</span>
+          <span class="cv-chips"><b>HTML5</b><b>CSS3</b><b>JS</b><b>Git</b></span>
+          <span class="cv-hint">Toca para abrir</span>
+        </button>
+        <div class="cv-info reveal reveal-delay-3">
+          <h3>Currículum vitae</h3>
+          <p>Incluye mi perfil profesional, la pasantía en deleFOCO, mi educación, habilidades técnicas y blandas, e idiomas.</p>
+          <div class="hero-cta">
+            <button type="button" class="btn btn-cv" data-open-cv>
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              Ver currículum
+            </button>
+            <a class="btn btn-outline" href="Curriculum_Juan_Pablo_Quiros.pdf" download>Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cotizar -->
+  <section class="section" id="cotizar">
+    <div class="container">
+      <h2 class="section-title reveal">Cuéntame qué <span class="accent">necesitas</span></h2>
+      <p class="section-subtitle reveal reveal-delay-1">Llena este formulario con tu idea y tu presupuesto. Se abre WhatsApp con el mensaje listo para enviarme.</p>
+      <div class="quote-grid">
+        <ul class="quote-steps reveal reveal-delay-2">
+          <li><b>1</b><span>Cuéntame qué tipo de página o formulario ocupas.</span></li>
+          <li><b>2</b><span>Elige el rango de presupuesto y la fecha que tienes en mente.</span></li>
+          <li><b>3</b><span>Envía el mensaje por WhatsApp y te respondo con una propuesta.</span></li>
+        </ul>
+        <form class="contact-form reveal reveal-delay-3" id="quoteForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="q-name">Nombre</label>
+              <input type="text" id="q-name" placeholder="Tu nombre" autocomplete="name" required />
+              <div class="form-error">Escribe tu nombre</div>
+            </div>
+            <div class="form-group">
+              <label for="q-email">Correo <small>(opcional)</small></label>
+              <input type="email" id="q-email" placeholder="tu@email.com" autocomplete="email" />
+              <div class="form-error">Ingresa un correo válido</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="q-service">¿Qué necesitas?</label>
+              <select id="q-service" required>
+                <option value="">Elige una opción</option>
+                <option>Página de presentación</option>
+                <option>Formulario con WhatsApp</option>
+                <option>Sitio de varias páginas</option>
+                <option>Rediseño de una página</option>
+                <option>Otro</option>
+              </select>
+              <div class="form-error">Elige un servicio</div>
+            </div>
+            <div class="form-group">
+              <label for="q-budget">Presupuesto</label>
+              <select id="q-budget" required>
+                <option value="">Elige un rango</option>
+                <option>Menos de ₡50 000</option>
+                <option>₡50 000 – ₡150 000</option>
+                <option>₡150 000 – ₡300 000</option>
+                <option>Más de ₡300 000</option>
+                <option>Aún no lo sé</option>
+              </select>
+              <div class="form-error">Elige un presupuesto</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="q-deadline">¿Para cuándo lo necesitas?</label>
+            <select id="q-deadline">
+              <option value="">Sin fecha definida</option>
+              <option>Lo antes posible</option>
+              <option>En 2 semanas</option>
+              <option>En 1 mes</option>
+              <option>Más de 1 mes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q-message">Cuéntame tu idea</label>
+            <textarea id="q-message" placeholder="¿Para qué es la página? ¿Qué debe tener?" required></textarea>
+            <div class="form-error">Cuéntame un poco sobre tu proyecto</div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">
+            Enviar por WhatsApp
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          </button>
+          <p class="form-note" id="quoteNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <h2 class="section-title reveal">Contacto</h2>
+      <p class="section-subtitle reveal reveal-delay-1">¿Tienes un proyecto o una oportunidad? Escríbeme.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a href="mailto:juanpabloquiros.ctpa@gmail.com" class="contact-item">
+            <div class="icon">✉️</div>
+            <div>
+              <div class="label">Email</div>
+              <div class="value">juanpabloquiros.ctpa@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+50661943952" class="contact-item">
+            <div class="icon">📱</div>
+            <div>
+              <div class="label">Teléfono</div>
+              <div class="value">6194-3952 / 6460-7351</div>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="icon">📍</div>
+            <div>
+              <div class="label">Ubicación</div>
+              <div class="value">San José, Costa Rica</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">🗣️</div>
+            <div>
+              <div class="label">Idiomas</div>
+              <div class="value">Español B2 · Inglés B2</div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal reveal-delay-2" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            <div class="form-error">Por favor ingresa tu nombre</div>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            <div class="form-error">Ingresa un correo válido</div>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="¿En qué te puedo ayudar?" required></textarea>
+            <div class="form-error">Escribe un mensaje</div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">
+            Enviar mensaje
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Hecho con <span class="heart">♥</span> por Juan Pablo Quiros · 2026</p>
+    </div>
+  </footer>
+
+  <!-- Visor de currículum -->
+  <div class="cv-modal" id="cvModal" role="dialog" aria-modal="true" aria-labelledby="cvTitle" aria-hidden="true">
+    <div class="cv-modal-box">
+      <div class="cv-modal-head">
+        <h3 id="cvTitle">Currículum · Juan Pablo Quiros</h3>
+        <div class="cv-modal-actions">
+          <a class="btn btn-outline btn-sm" href="Curriculum_Juan_Pablo_Quiros.pdf" target="_blank" rel="noopener">Abrir en pestaña</a>
+          <a class="btn btn-primary btn-sm" href="Curriculum_Juan_Pablo_Quiros.pdf" download>Descargar</a>
+          <button type="button" class="cv-close" id="cvClose" aria-label="Cerrar">✕</button>
+        </div>
+      </div>
+      <iframe id="cvFrame" title="Currículum de Juan Pablo Quiros" data-src="Curriculum_Juan_Pablo_Quiros.pdf#view=FitH"></iframe>
+      <p class="cv-fallback">¿No se ve el PDF? Usa “Abrir en pestaña” o “Descargar”.</p>
+    </div>
+  </div>
+
+  <script src="podcast-voz.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
